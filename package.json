@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^3.0.0",
+    "@astrojs/node": "^6.0.2",
+    "astro": "^3.1.1",
+    "firebase": "^10.3.0",
+    "firebase-admin": "^11.10.1",
+    "nanostores": "^0.9.3",
+    "npx": "^10.2.2",
+    "request": "^2.88.2",
+    "seedrandom": "^3.0.5"
+  }
+}

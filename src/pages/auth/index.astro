@@ -1,0 +1,30 @@
+<!-- ---
+import Layout from "../../layouts/Layout.astro";
+import { getOrCreatePlayer } from "../../firebase/database";
+
+const title = "Setup User";
+
+if (Astro.request.method === "POST") {
+  const data = await Astro.request.formData();
+  const username = data.get("username");
+
+  const { playerId, playerData } = await getOrCreatePlayer(username);
+  // logger.log("playerId:", playerId);
+  Astro.cookies.set("login", playerId);
+  Astro.cookies.set("nonce", "yourcoolnonce");
+  return Astro.redirect("/");
+}
+---
+
+<Layout title={title}>
+  <main class="l-main">
+    <h1>{title}</h1>
+
+    <p>This isn't really authenticated yet. It's just here to help keep track of your session.</p>
+    <form method="post">
+      <label for="email" for="username">Username</label>
+      <input type="text" name="username" id="username" />
+      <button type="submit">Use this Username</button>
+    </form>
+  </main>
+</Layout> -->

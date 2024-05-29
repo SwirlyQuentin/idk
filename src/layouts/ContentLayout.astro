@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <main>
+    <h1>{frontmatter.title}</h1>
+    <slot />
+  </main>
+</Layout>
+
+<style>
+  /* CSS for Blog Format */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: lightgray;
+    min-height: 100vh; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  slot {
+    display: block;
+    margin-top: 20px;
+  }
+</style>

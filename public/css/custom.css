@@ -1,0 +1,51 @@
+/* CSS Styles */
+@charset "utf-8";
+/* CSS Document */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 980px) {
+    .readingColumn {
+        width: 600px !important;
+    }
+}
+
+body {
+    padding-bottom: 40px;
+    background-color: #333333;
+}
+
+.easyReading p {
+    line-height: 1.5em;
+    font-family: serif;
+    font-size: 1.3em;
+    color: #555;
+    text-indent: 30px;
+}
+
+.easyReading h1,
+.easyReading h2,
+.easyReading h3,
+.easyReading h4,
+.easyReading h5,
+.easyReading h6 {
+    text-align: center;
+}
+
+.easyReading h1,
+.easyReading h2 {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    background: url(../images/prose_separator.png) no-repeat bottom center;
+}
+
+.easyReading hr {
+    margin: 40px 0;
+    background: url(../images/prose_separator.png) no-repeat top center;
+    height: 14px;
+    border: none !important;
+}
